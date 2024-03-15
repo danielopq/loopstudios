@@ -1,3 +1,63 @@
 @charset "utf-8";
-/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+/*######################## GENERAL ########################*/
+body{
+	padding:0px;
+	margin:0px;
+	width: 100vw;
+	height: 100vh;
+	justify-content: flex-start;
+}
+
+.flexColumnCenter{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.flexRowCenter{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+/*######################## HEADER ########################*/
+
+header{
+	margin:0px;
+	padding: 0px;
+	width: 1440px;
+	height: 650px;
+	background: url("../images/desktop/image-hero.jpg") center/1440px no-repeat;
+}
+
+menu{
+	width: 1120px;
+	height: 32px;
+	justify-content: space-between;
+	padding:0px;
+	margin:70px auto auto auto;
+}
+
+#menu-logo{
+	width: 192px;
+	height: inherit;
+	background: url("../images/logo.svg") center/192px no-repeat;
+}
+
+#menu-links{
+	height: inherit;
+}
+
+#menu-links > div{
+	margin: auto auto auto 30px;
+	color: white;
+}
+
+#menu-links p{
+	font: 400 15px/1 'Alata';
+}
+
 
