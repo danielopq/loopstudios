@@ -143,10 +143,6 @@ menu{
 		"above pocket curiosity fisheye";
 }
 
-#creations > div {
-	border: solid 1px black;
-}
-
 #creations-title{
 	grid-area: title;
 	font: 300 50px/1 'Josefin Sans';
@@ -162,34 +158,66 @@ menu{
 
 #creations-bt{
 	grid-area: button;
+	display:flex;
+	align-items: flex-start;
+	justify-content: flex-end;
+}
+
+#see-all-bt{
+	width: 155px;
+	height: 40px;
+	font: 400 16px/40px 'Alata';
+	color:black;
+	display: table-cell;
+	text-align: center;
+	border: solid 1px black;
 }
 #creations-earth{
 	grid-area: earth;
+	background: url("../images/desktop/image-deep-earth.jpg") center/255px no-repeat;
 }
 #creations-arcade{
 	grid-area: arcade;
+	background: url("../images/desktop/image-night-arcade.jpg") center/255px no-repeat;
 }
 #creations-soccer{
 	grid-area: soccer;
+	background: url("../images/desktop/image-soccer-team.jpg") center/255px no-repeat;
 }
 
 #creations-thegrid{
 	grid-area: thegrid;
+	background: url("../images/desktop/image-grid.jpg") center/255px no-repeat;
 }
 
 #creations-above{
 	grid-area: above;
+	background: url("../images/desktop/image-from-above.jpg") center/255px no-repeat;
 }
 #creations-pocket{
 	grid-area: pocket;
+	background: url("../images/desktop/image-pocket-borealis.jpg") center/255px no-repeat;
 }
 #creations-curiosity{
 	grid-area: curiosity;
+	background: url("../images/desktop/image-curiosity.jpg") center/255px no-repeat;
 }
 #creations-fisheye{
 	grid-area: fisheye;
+	background: url("../images/desktop/image-fisheye.jpg") center/255px no-repeat;
 }
 
+.creation-cont{
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-start;
+}
+
+.creation-text{
+	font: 300 30px/1 'Josefin Sans';
+	color:white;
+	margin: auto auto 40px 40px;
+}
 
 
 
