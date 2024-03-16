@@ -7,7 +7,7 @@ body{
 	padding:0px;
 	margin:0px;
 	width: 100vw;
-	height: 100vh;
+	height: 3000px;
 	justify-content: flex-start;
 }
 
@@ -83,5 +83,57 @@ menu{
 	font: 300 70px/1 'Josefin Sans';
 	margin-left: 50px;
 }
+
+/*######################## LEADER ########################*/
+
+#leader{
+	position: relative;
+	width: 1120px;
+	height: 500px;
+	margin:160px auto auto auto;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+}
+
+#leader-pic{
+	height: inherit;
+	width: 730px;
+	background: url("../images/desktop/image-interactive.jpg") center/730px no-repeat;
+}
+
+#leader-text{
+	display: flex;
+	justify-content: flex-end;
+	position: absolute;
+	z-index: 100;
+	background-color: white;
+	width: 540px;
+	height: 325px;
+	left: 570px;
+}
+
+#leader-text p{
+	margin-left: 90px;
+	text-align: left;
+}
+
+.leader-title{
+	font: 300 50px/1 'Josefin Sans';
+	color:black;
+	margin-bottom: 20px;
+}
+
+.leader-main-text{
+	font: 400 15px/1.6 'Alata';
+	color: hsl(0, 0%, 55%);
+	margin-bottom: 0px;
+}
+
+
+
+
+
+
 
 
