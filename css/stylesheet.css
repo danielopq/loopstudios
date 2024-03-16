@@ -60,4 +60,28 @@ menu{
 	font: 400 15px/1 'Alata';
 }
 
+#header-text{
+	width: 1120px;
+	height: 279px;
+	margin:125px auto auto auto;
+	overflow: hidden;
+}
+
+#header-text div{
+	width: 650px;
+	height: 275px;
+	border: solid 2px white;
+	float:left;
+	display: flex;
+	align-items: center;
+}
+
+#header-text p{
+	margin: auto;
+	text-align: left;
+	color: white;
+	font: 300 70px/1 'Josefin Sans';
+	margin-left: 50px;
+}
+
 
