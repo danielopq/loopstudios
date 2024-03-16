@@ -130,6 +130,65 @@ menu{
 	margin-bottom: 0px;
 }
 
+/*######################## CREATIONS ########################*/
+
+#creations{
+	display: grid;
+	grid-gap: 30px;
+	grid-template-rows: 95px 450px 450px;
+	grid-template-columns: 255px 255px 255px 255px;
+	grid-template-areas:
+		"title title title button"
+		"earth arcade soccer thegrid"
+		"above pocket curiosity fisheye";
+}
+
+#creations > div {
+	border: solid 1px black;
+}
+
+#creations-title{
+	grid-area: title;
+	font: 300 50px/1 'Josefin Sans';
+	color:black;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+#creations-title p{
+	margin: 0px;
+}
+
+#creations-bt{
+	grid-area: button;
+}
+#creations-earth{
+	grid-area: earth;
+}
+#creations-arcade{
+	grid-area: arcade;
+}
+#creations-soccer{
+	grid-area: soccer;
+}
+
+#creations-thegrid{
+	grid-area: thegrid;
+}
+
+#creations-above{
+	grid-area: above;
+}
+#creations-pocket{
+	grid-area: pocket;
+}
+#creations-curiosity{
+	grid-area: curiosity;
+}
+#creations-fisheye{
+	grid-area: fisheye;
+}
 
 
 
