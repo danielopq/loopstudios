@@ -23,6 +23,32 @@ body{
 	align-items: center;
 }
 
+.upRight{
+	display:flex;
+	align-items: flex-start;
+	justify-content: flex-end;
+}
+
+.upLeft{
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+
+.link{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	width: 24px;
+	height: inherit;
+}
+
+.link:hover{
+	cursor:pointer;
+	border-bottom: solid 2px white;
+}
+
 /*######################## HEADER ########################*/
 
 header{
@@ -49,15 +75,17 @@ menu{
 
 #menu-links{
 	height: inherit;
+	justify-content:space-between;
 }
 
 #menu-links > div{
-	margin: auto auto auto 30px;
+	margin: auto 30px auto 30px;
 	color: white;
 }
 
 #menu-links p{
 	font: 400 15px/1 'Alata';
+	margin:0px;
 }
 
 #header-text{
@@ -148,9 +176,6 @@ menu{
 	grid-area: title;
 	font: 300 50px/1 'Josefin Sans';
 	color:black;
-	display: flex;
-	align-items: flex-start;
-	justify-content: flex-start;
 }
 
 #creations-title p{
@@ -159,9 +184,6 @@ menu{
 
 #creations-bt{
 	grid-area: button;
-	display:flex;
-	align-items: flex-start;
-	justify-content: flex-end;
 }
 
 #see-all-bt{
@@ -172,6 +194,11 @@ menu{
 	display: table-cell;
 	text-align: center;
 	border: solid 1px black;
+}
+#see-all-bt:hover{
+	cursor:pointer;
+	background-color: black;
+	color:white;
 }
 #creations-earth{
 	grid-area: earth;
@@ -209,21 +236,32 @@ menu{
 }
 
 .creation-cont{
+	width: 256px;
+	height: 450px;
+}
+.creation-rollover{
+	width: inherit;
+	height: inherit;
 	display: flex;
 	align-items: flex-end;
 	justify-content: flex-start;
+	background-color: hsla(0, 0%, 0%,0.3);
+	color:white;
 }
-
+.creation-rollover:hover{
+	cursor:pointer;
+	background-color: hsla(0, 0%, 100%,0.7);
+	color:black;
+}
 .creation-text{
 	font: 300 30px/1 'Josefin Sans';
-	color:white;
 	margin: auto auto 40px 40px;
 }
 
 /*######################## FOOTER ########################*/
 
 footer{
-	width: 1120px;
+	width: 1440px;
 	height: 159px;
 	background-color: black;
 	margin-top: 180px;
@@ -233,17 +271,13 @@ footer{
 }
 
 #footer-container{
-	width: 800px;
+	width: 1120px;
 	height: 85px;
 	display: grid;
 	grid-template-columns: 385px 275px;
-	grid-template-rows: 40px 40px;
-	grid-column-gap: 140px;
+	grid-template-rows: 35px 35px;
+	grid-column-gap: 470px;
 	grid-template-areas: "logo media""links copyRight";
-}
-
-#footer-container > div{
-	border: solid 1px white;
 }
 
 #footer-logo{
@@ -252,13 +286,51 @@ footer{
 
 #footer-links{
 	grid-area: links;
+	justify-content: center;
+}
+
+#footer-links div{
+	margin: auto 32px auto 32px;
+}
+
+#footer-links p{
+	color: white;
+	font: 400 13px/35px 'Alata';
+	margin:0px;
+	padding: 0px;
 }
 
 #footer-media{
 	grid-area: media;
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: flex-end;
 }
 
+#facebook{
+	background: url("../images/icon-facebook.svg") top/24px no-repeat;
+}
+#twitter{
+	background: url("../images/icon-twitter.svg") top/24px no-repeat;
+}
+#pinterest{
+	background: url("../images/icon-pinterest.svg") top/24px no-repeat;
+}
+#instagram{
+	background: url("../images/icon-instagram.svg") top/24px no-repeat;
+}
 #footer-copyRight{
 	grid-area: copyRight;
+	color: hsl(0, 0%, 55%);
+	font: 400 17px/35px 'Alata';
 }
+
+.media{
+	width: 24px;
+	height: 35px;
+	margin-left: 20px;
+}
+
+
 
