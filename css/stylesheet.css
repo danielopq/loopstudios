@@ -34,6 +34,12 @@ body {
 	cursor: pointer;
 	border-bottom: solid 2px white;
 }
+
+.menu-logo {
+	width: 192px;
+	height: inherit;
+	background: url("../images/logo.svg") center/192px no-repeat;
+}
 /*######################## HEADER ########################*/
 header {
 	margin: 0px;
@@ -49,11 +55,7 @@ menu {
 	padding: 0px;
 	margin: 70px auto auto auto;
 }
-#menu-logo {
-	width: 192px;
-	height: inherit;
-	background: url("../images/logo.svg") center/192px no-repeat;
-}
+
 #menu-links {
 	height: inherit;
 	justify-content: space-between;
@@ -67,9 +69,14 @@ menu {
 	margin: 0px;
 }
 #menu-hamburger {
+	display: none;
 	width: 24px;
 	height: 16px;
 	background: url("../images/icon-hamburger.svg") center/24px no-repeat;
+}
+#menu-hamburger:hover{
+	cursor:pointer;
+	opacity:0.5;
 }
 #header-text {
 	width: 1120px;
@@ -90,6 +97,60 @@ menu {
 	color: white;
 	font: 300 70px/1 'Josefin Sans';
 }
+/*######################## MENU MOBILE ########################*/
+#menu-mobile{
+	display:none;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	z-index: 100;
+	background-color: black;
+	top: 0px;
+}
+
+#menu-mobile > div{
+	margin-left: auto;
+	margin-right: auto;
+}
+#mobile-top{
+	width: 430px;
+	height: 32px;
+	margin-top: 70px;
+	justify-content: space-between;
+}
+
+#close-icon{
+	width: 20px;
+	height: inherit;
+	background: url("../images/icon-close.svg")center/20px no-repeat;
+}
+
+#close-icon:hover{
+	cursor:pointer;
+	opacity: 0.5;
+}
+
+#mobile-menu{
+	width: 420px;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-top: 150px;
+}
+
+.mobile-link{
+	font: 300 30px/1 'Josefin Sans';
+	color: white;
+	margin-bottom: 0px;
+	max-width: 160px;
+}
+
+.mobile-link:hover{
+	cursor:pointer;
+	opacity: 0.5;
+}
+
 /*######################## LEADER ########################*/
 #leader {
 	position: relative;
@@ -294,10 +355,11 @@ footer {
 	margin-left: 20px;
 }
 @media screen and (max-width:480px) {
-	/*######################## HEADER ########################*/
+	
 	body {
 		height: 100%;
 	}
+	/*######################## HEADER ########################*/
 	header {
 		width: 480px;
 		height: 830px;
@@ -308,6 +370,9 @@ footer {
 	}
 	#menu-links {
 		display: none;
+	}
+	#menu-hamburger{
+		display: block;
 	}
 	#header-text {
 		width: 430px;
