@@ -15,6 +15,7 @@ body {
 
 p{
 	padding: 0px;
+	margin: 0px;
 }
 
 .flexColumnCenter {
@@ -209,31 +210,31 @@ menu {
 	margin-bottom: 0px;
 }
 /*######################## CREATIONS ########################*/
-#creations {
-	display: grid;
-	grid-gap: 30px;
-	grid-template-rows: 95px 450px 450px;
-	grid-template-columns: 256px 256px 256px 256px;
-	grid-template-areas:
-		"title title title button"
-		"earth arcade soccer thegrid"
-		"above pocket curiosity fisheye";
-	margin-top: 190px;
-}
+
 #creations-title {
-	grid-area: title;
+	width: 1114px;
+	height: 48px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-between;
+	margin-top: 184px;
+}
+
+#creations-title p{
+	width: 445px;
+	height: inherit;
 	font: 300 50px/1 'Josefin Sans';
 	color: black;
 }
-#creations-title p {
-	margin: 0px;
-}
+
 #creations-bt {
 	grid-area: button;
 	display: flex;
 	align-items: flex-start;
 	justify-content: flex-end;
 }
+
 #see-all-bt {
 	width: 155px;
 	height: 40px;
@@ -248,6 +249,17 @@ menu {
 	background-color: black;
 	color: white;
 }
+#creations {
+	display: grid;
+	grid-gap: 30px;
+	grid-template-rows: 450px 450px;
+	grid-template-columns: 256px 256px 256px 256px;
+	grid-template-areas:
+		"earth arcade soccer thegrid"
+		"above pocket curiosity fisheye";
+	margin-top: 80px;
+}
+
 #creations-earth {
 	grid-area: earth;
 	background: url("../images/desktop/image-deep-earth.jpg") center/256px no-repeat;
