@@ -66,6 +66,7 @@ menu {
 	height: 32px;
 	justify-content: space-between;
 	padding: 0px 30px 0px 0px;
+	margin: 0px;
 }
 
 #menu-links {
@@ -163,9 +164,10 @@ menu {
 }
 
 /*######################## LEADER ########################*/
+
 #leader {
 	position: relative;
-	width: 1120px;
+	width: 1111px;
 	height: 500px;
 	margin: 160px auto auto auto;
 	display: flex;
@@ -178,26 +180,31 @@ menu {
 	background: url("../images/desktop/image-interactive.jpg") center/730px no-repeat;
 }
 #leader-text {
+	width: 541px;
+	height: 317px;
 	display: flex;
+	flex-direction: column;
 	justify-content: flex-end;
+	align-items: flex-end;
 	position: absolute;
 	z-index: 100;
 	background-color: white;
-	width: 540px;
-	height: 325px;
 	left: 570px;
 }
 #leader-text p {
-	margin-left: 90px;
+	width: 440px;
 	text-align: left;
+
 }
 .leader-title {
-	font: 300 50px/1 'Josefin Sans';
+	height: 96px;
+	font: 300 48px/48px 'Josefin Sans';
 	color: black;
-	margin-bottom: 20px;
+	margin-bottom: 25px;
 }
 .leader-main-text {
-	font: 400 15px/1.6 'Alata';
+	height: 100px;
+	font: 400 15px/25px 'Alata';
 	color: hsl(0, 0%, 55%);
 	margin-bottom: 0px;
 }
