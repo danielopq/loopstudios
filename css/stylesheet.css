@@ -216,7 +216,7 @@ menu {
 	height: 48px;
 	display: flex;
 	flex-direction: row;
-	align-items: flex-start;
+	align-items: center;
 	justify-content: space-between;
 	margin-top: 184px;
 }
@@ -224,7 +224,7 @@ menu {
 #creations-title p{
 	width: 445px;
 	height: inherit;
-	font: 300 50px/1 'Josefin Sans';
+	font: 300 48px/48px 'Josefin Sans';
 	color: black;
 }
 
@@ -338,28 +338,35 @@ footer {
 }
 #footer-logo {
 	grid-area: logo;
+	border: solid 1px red;
 }
 #footer-links {
+	border: solid 1px red;
 	grid-area: links;
 	display: flex;
 	flex-direction: row;
-	align-items: center;
-	justify-content: center;
+	align-items: flex-start;
 }
 #footer-links div {
-	margin: auto 32px auto 32px;
+	margin: auto 25px auto 0px;
+	text-align: center;
+	border: solid 1px blue;
 }
 #footer-links p {
 	height: 25px;
 	color: white;
 	font: 400 15px/25px 'Alata';
+	border: solid 1px red;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
 }
 #footer-media {
 	grid-area: media;
 	display: flex;
 	flex-direction: row;
 	align-content: center;
-	justify-content: flex-end;
+	justify-content: flex-start;
 }
 #facebook {
 	background: url("../images/icon-facebook.svg") top/24px no-repeat;
