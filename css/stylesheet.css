@@ -238,7 +238,8 @@ menu {
 #see-all-bt {
 	width: 155px;
 	height: 40px;
-	font: 400 16px/40px 'Alata';
+	font: 400 14px/14px 'Alata';
+	letter-spacing: 5px;
 	color: black;
 	display: table-cell;
 	text-align: center;
