@@ -307,12 +307,13 @@ menu {
 }
 .creation-rollover:hover {
 	cursor: pointer;
-	background-color: hsla(0, 0%, 100%, 0.7);
+	background-color: hsla(0, 0%, 100%, 0.75);
 	color: black;
 }
 .creation-text {
-	font: 300 30px/1 'Josefin Sans';
-	margin: auto auto 40px 40px;
+	height: 64px;
+	font: 300 32px/32px 'Josefin Sans';
+	margin: auto auto 32px 40px;
 }
 /*######################## FOOTER ########################*/
 footer {
