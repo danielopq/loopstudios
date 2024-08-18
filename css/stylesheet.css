@@ -302,7 +302,7 @@ menu {
 	display: flex;
 	align-items: flex-end;
 	justify-content: flex-start;
-	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+	background: linear-gradient(-180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
 	color: white; 
 }
 .creation-rollover:hover {
@@ -330,8 +330,9 @@ footer {
 	margin-top: 44px;
 	display: grid;
 	grid-template-columns: 380px 272px;
-	grid-template-rows: 35px 35px;
-	grid-column-gap: 470px;
+	grid-template-rows: 34px 35px;
+	grid-column-gap: 458px;
+	grid-row-gap: 14px;
 	grid-template-areas: "logo media""links copyRight";
 }
 #footer-logo {
@@ -348,10 +349,9 @@ footer {
 	margin: auto 32px auto 32px;
 }
 #footer-links p {
+	height: 25px;
 	color: white;
-	font: 400 13px/35px 'Alata';
-	margin: 0px;
-	padding: 0px;
+	font: 400 15px/25px 'Alata';
 }
 #footer-media {
 	grid-area: media;
@@ -378,13 +378,20 @@ footer {
 	justify-content: flex-end;
 	grid-area: copyRight;
 	color: hsl(0, 0%, 55%);
-	font: 400 17px/35px 'Alata';
+	font: 400 15px/25px 'Alata';
+	text-align: right;
 }
 .media {
 	width: 24px;
-	height: 35px;
-	margin-left: 20px;
+	height: inherit;
+	margin-left: 16px;
 }
+
+/* ########################################################## */
+/* ##################### MOBILE VERSION ##################### */
+/* ########################################################## */
+
+
 @media screen and (max-width:480px) {
 	
 	body {
