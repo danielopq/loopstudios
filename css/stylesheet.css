@@ -302,12 +302,12 @@ menu {
 	display: flex;
 	align-items: flex-end;
 	justify-content: flex-start;
-	background-color: hsla(0, 0%, 0%, 0.3);
-	color: white;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+	color: white; 
 }
 .creation-rollover:hover {
 	cursor: pointer;
-	background-color: hsla(0, 0%, 100%, 0.75);
+	background: hsla(0, 0%, 100%, 0.75);
 	color: black;
 }
 .creation-text {
@@ -318,18 +318,18 @@ menu {
 /*######################## FOOTER ########################*/
 footer {
 	width: 1440px;
-	height: 159px;
+	height: 160px;
 	background-color: black;
-	margin-top: 180px;
+	margin-top: 184px;
 	display: flex;
-	align-items: center;
 	justify-content: center;
 }
 #footer-container {
-	width: 1120px;
-	height: 85px;
+	width: 1110px;
+	height: 83px;
+	margin-top: 44px;
 	display: grid;
-	grid-template-columns: 385px 275px;
+	grid-template-columns: 380px 272px;
 	grid-template-rows: 35px 35px;
 	grid-column-gap: 470px;
 	grid-template-areas: "logo media""links copyRight";
