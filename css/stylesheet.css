@@ -40,7 +40,6 @@ p {
 .link {
 	height: inherit;
 	position: relative;
-	font: 400 15px/25px 'Alata';
 	text-align: center;
 	cursor: pointer;
 	color: white;
@@ -90,8 +89,9 @@ menu {
 
 #menu-links {
 	width: 380px;
-	height: 30px;
+	height: inherit;
 	justify-content: space-between;
+	font: 400 15px/32px 'Alata';
 }
 
 #menu-hamburger {
@@ -385,6 +385,7 @@ footer {
 	flex-direction: row;
 	align-items: flex-start;
 	justify-content: space-between;
+	font: 400 15px/25px 'Alata';
 }
 
 #footer-media {
