@@ -338,6 +338,7 @@ footer {
 }
 #footer-logo {
 	grid-area: logo;
+	background: url('../images/logo.svg') 0% 50% / 144px 24px no-repeat;
 }
 
 #footer-links {
@@ -370,15 +371,16 @@ footer {
 
 .textLink:hover::after {
 	border-bottom-color: white;
-  }
+}
 
 #footer-media {
 	grid-area: media;
 	display: flex;
 	flex-direction: row;
 	align-content: center;
-	justify-content: flex-start;
+	justify-content: flex-end;
 }
+
 #facebook {
 	background: url("../images/icon-facebook.svg") center/24px no-repeat;
 }
