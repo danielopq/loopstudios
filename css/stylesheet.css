@@ -38,19 +38,6 @@ p {
 }
 
 .link {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 24px;
-	height: inherit;
-}
-
-.link:hover {
-	cursor: pointer;
-	border-bottom: solid 2px white;
-}
-
-.textLink {
 	height: inherit;
 	position: relative;
 	font: 400 15px/25px 'Alata';
@@ -59,7 +46,7 @@ p {
 	color: white;
 }
 
-.textLink::after {
+.link::after {
 	content: '';
 	width: 24px;
 	height: 0;
@@ -71,7 +58,7 @@ p {
 	transition: border-color 0.3s;
 }
 
-.textLink:hover::after {
+.link:hover::after {
 	border-bottom-color: white;
 }
 
@@ -405,29 +392,29 @@ footer {
 	grid-area: media;
 	display: flex;
 	flex-direction: row;
-	align-content: flex-start;
+	align-content: flex-end;
 	justify-content: flex-end;
 }
 
 #facebook {
-	background: url("../images/icon-facebook.svg") center/24px no-repeat;
+	background: url("../images/icon-facebook.svg") top/24px no-repeat;
 }
 
 #twitter {
-	background: url("../images/icon-twitter.svg") center/24px no-repeat;
+	background: url("../images/icon-twitter.svg") 50% 2px/24px no-repeat;
 }
 
 #pinterest {
-	background: url("../images/icon-pinterest.svg") center/24px no-repeat;
+	background: url("../images/icon-pinterest.svg") top/24px no-repeat;
 }
 
 #instagram {
-	background: url("../images/icon-instagram.svg") center/24px no-repeat;
+	background: url("../images/icon-instagram.svg") top/24px no-repeat;
 }
 
 #footer-copyRight {
 	display: flex;
-	align-items: flex-start;
+	align-items: flex-start; 
 	justify-content: flex-end;
 	grid-area: copyRight;
 	color: hsl(0, 0%, 55%);
