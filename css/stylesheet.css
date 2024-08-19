@@ -71,7 +71,6 @@ header {
 	padding: 64px 165px 0px;
 	display: flex;
 	flex-direction: column;
-
 	background: url("../images/desktop/image-hero.jpg") center/1440px no-repeat;
 }
 
@@ -79,7 +78,7 @@ menu {
 	width: 1110px;
 	height: 32px;
 	justify-content: space-between;
-	padding: 0px 30px 0px 0px;
+	padding: 0px;
 	margin: 0px;
 }
 
