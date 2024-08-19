@@ -473,7 +473,7 @@ footer {
 	#header-text {
 		width: 327px;
 		height: 196px;
-		margin: 163px auto auto auto;
+		margin: 96px auto auto auto;
 	}
 
 	#header-text h1 {
@@ -483,40 +483,44 @@ footer {
 	}
 
 	/*######################## LEADER ########################*/
+
 	#leader {
-		width: 410px;
-		height: 600px;
-		margin: 120px auto 50px auto;
+		width: 327px;
+		height: 527px;
+		margin: 120px auto 0px auto;
 		flex-direction: column;
+		align-items: center;
 	}
 
 	#leader-pic {
-		width: 410px;
-		height: 385px;
-		background: url("../images/mobile/image-interactive.jpg") center/410px no-repeat;
+		width: 327px;
+		height: 224px;
+		background: url("../images/mobile/image-interactive.jpg") center/327px no-repeat;
 	}
 
 	#leader-text {
 		position: relative;
-		z-index: 0;
-		width: 410px;
-		height: 370px;
+		width: 279px;
+		height: 255px;
+		justify-content: flex-start;
+		align-items: center;
 		left: auto;
-		margin-top: 0px;
+		margin-top: 48px;
 	}
 
 	#leader-text p {
-		margin-left: 0px;
+		width: inherit;
 		text-align: center;
-		margin: 30px auto 0px auto;
 	}
 
 	.leader-title {
-		font: 300 35px/1 'Josefin Sans';
+		height: 64px;
+		font: 300 32px/32px 'Josefin Sans';
+		margin-bottom: 16px;
 	}
 
 	.leader-main-text {
-		font: 400 18px/1.6 'Alata';
+		height: 175px;
 	}
 
 	/*######################## CREATIONS ########################*/
