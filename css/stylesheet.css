@@ -1,7 +1,8 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
 /*######################## GENERAL ########################*/
-*{
+* {
 	box-sizing: border-box;
 }
 
@@ -13,7 +14,7 @@ body {
 	justify-content: flex-start;
 }
 
-p{
+p {
 	padding: 0px;
 	margin: 0px;
 }
@@ -23,16 +24,19 @@ p{
 	flex-direction: column;
 	align-items: center;
 }
+
 .flexRowCenter {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 }
+
 .upLeft {
 	display: flex;
 	align-items: flex-start;
 	justify-content: flex-start;
 }
+
 .link {
 	display: flex;
 	align-items: center;
@@ -40,16 +44,37 @@ p{
 	width: 24px;
 	height: inherit;
 }
+
 .link:hover {
 	cursor: pointer;
 	border-bottom: solid 2px white;
 }
 
-.menu-logo {
-	width: 192px;
+.textLink {
 	height: inherit;
-	background: url("../images/logo.svg") center/192px no-repeat;
+	position: relative;
+	font: 400 15px/25px 'Alata';
+	text-align: center;
+	cursor: pointer;
+	color: white;
 }
+
+.textLink::after {
+	content: '';
+	width: 24px;
+	height: 0;
+	border-bottom: 2px solid transparent;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+	transition: border-color 0.3s;
+}
+
+.textLink:hover::after {
+	border-bottom-color: white;
+}
+
 /*######################## HEADER ########################*/
 header {
 	margin: 0px;
@@ -62,6 +87,7 @@ header {
 
 	background: url("../images/desktop/image-hero.jpg") center/1440px no-repeat;
 }
+
 menu {
 	width: 1110px;
 	height: 32px;
@@ -70,29 +96,30 @@ menu {
 	margin: 0px;
 }
 
+.menu-logo {
+	width: 192px;
+	height: inherit;
+	background: url("../images/logo.svg") center/192px no-repeat;
+}
+
 #menu-links {
 	width: 380px;
 	height: inherit;
 	justify-content: space-between;
 }
-#menu-links > div {
-	margin: auto 30px auto 30px;
-	color: white;
-}
-#menu-links p {
-	font: 400 15px/32px 'Alata';
-	margin: 0px;
-}
+
 #menu-hamburger {
 	display: none;
 	width: 24px;
 	height: 16px;
 	background: url("../images/icon-hamburger.svg") center/24px no-repeat;
 }
-#menu-hamburger:hover{
-	cursor:pointer;
-	opacity:0.5;
+
+#menu-hamburger:hover {
+	cursor: pointer;
+	opacity: 0.5;
 }
+
 #header-text {
 	width: 650px;
 	height: 278px;
@@ -110,9 +137,10 @@ menu {
 	padding: 0px;
 	font: 300 72px/70px 'Josefin Sans';
 }
+
 /*######################## MENU MOBILE ########################*/
-#menu-mobile{
-	display:none;
+#menu-mobile {
+	display: none;
 	position: fixed;
 	width: 100vw;
 	height: 100vh;
@@ -121,29 +149,30 @@ menu {
 	top: 0px;
 }
 
-#menu-mobile > div{
+#menu-mobile>div {
 	margin-left: auto;
 	margin-right: auto;
 }
-#mobile-top{
+
+#mobile-top {
 	width: 430px;
 	height: 32px;
 	margin-top: 70px;
 	justify-content: space-between;
 }
 
-#close-icon{
+#close-icon {
 	width: 20px;
 	height: inherit;
 	background: url("../images/icon-close.svg")center/20px no-repeat;
 }
 
-#close-icon:hover{
-	cursor:pointer;
+#close-icon:hover {
+	cursor: pointer;
 	opacity: 0.5;
 }
 
-#mobile-menu{
+#mobile-menu {
 	width: 420px;
 	height: 400px;
 	display: flex;
@@ -152,15 +181,15 @@ menu {
 	margin-top: 150px;
 }
 
-.mobile-link{
+.mobile-link {
 	font: 300 30px/1 'Josefin Sans';
 	color: white;
 	margin-bottom: 0px;
 	max-width: 160px;
 }
 
-.mobile-link:hover{
-	cursor:pointer;
+.mobile-link:hover {
+	cursor: pointer;
 	opacity: 0.5;
 }
 
@@ -175,11 +204,13 @@ menu {
 	flex-direction: row;
 	align-items: flex-end;
 }
+
 #leader-pic {
 	height: inherit;
 	width: 730px;
 	background: url("../images/desktop/image-interactive.jpg") center/730px no-repeat;
 }
+
 #leader-text {
 	width: 541px;
 	height: 317px;
@@ -192,23 +223,27 @@ menu {
 	background-color: white;
 	left: 570px;
 }
+
 #leader-text p {
 	width: 445px;
 	text-align: left;
 
 }
+
 .leader-title {
 	height: 96px;
 	font: 300 48px/48px 'Josefin Sans';
 	color: black;
 	margin-bottom: 25px;
 }
+
 .leader-main-text {
 	height: 100px;
 	font: 400 15px/25px 'Alata';
 	color: hsl(0, 0%, 55%);
 	margin: 0px;
 }
+
 /*######################## CREATIONS ########################*/
 
 #creations-title {
@@ -221,7 +256,7 @@ menu {
 	margin-top: 184px;
 }
 
-#creations-title p{
+#creations-title p {
 	width: 445px;
 	height: inherit;
 	font: 300 48px/48px 'Josefin Sans';
@@ -245,11 +280,13 @@ menu {
 	text-align: center;
 	border: solid 1px black;
 }
+
 #see-all-bt:hover {
 	cursor: pointer;
 	background-color: black;
 	color: white;
 }
+
 #creations {
 	display: grid;
 	grid-gap: 30px;
@@ -265,38 +302,47 @@ menu {
 	grid-area: earth;
 	background: url("../images/desktop/image-deep-earth.jpg") center/256px no-repeat;
 }
+
 #creations-arcade {
 	grid-area: arcade;
 	background: url("../images/desktop/image-night-arcade.jpg") center/256px no-repeat;
 }
+
 #creations-soccer {
 	grid-area: soccer;
 	background: url("../images/desktop/image-soccer-team.jpg") center/256px no-repeat;
 }
+
 #creations-thegrid {
 	grid-area: thegrid;
 	background: url("../images/desktop/image-grid.jpg") center/256px no-repeat;
 }
+
 #creations-above {
 	grid-area: above;
 	background: url("../images/desktop/image-from-above.jpg") center/256px no-repeat;
 }
+
 #creations-pocket {
 	grid-area: pocket;
 	background: url("../images/desktop/image-pocket-borealis.jpg") center/256px no-repeat;
 }
+
 #creations-curiosity {
 	grid-area: curiosity;
 	background: url("../images/desktop/image-curiosity.jpg") center/256px no-repeat;
 }
+
 #creations-fisheye {
 	grid-area: fisheye;
 	background: url("../images/desktop/image-fisheye.jpg") center/256px no-repeat;
 }
+
 .creation-cont {
 	width: 256px;
 	height: 450px;
 }
+
 .creation-rollover {
 	width: inherit;
 	height: inherit;
@@ -304,18 +350,21 @@ menu {
 	align-items: flex-end;
 	justify-content: flex-start;
 	background: linear-gradient(-180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
-	color: white; 
+	color: white;
 }
+
 .creation-rollover:hover {
 	cursor: pointer;
 	background: hsla(0, 0%, 100%, 0.75);
 	color: black;
 }
+
 .creation-text {
 	height: 64px;
 	font: 300 32px/32px 'Josefin Sans';
 	margin: auto auto 32px 40px;
 }
+
 /*######################## FOOTER ########################*/
 footer {
 	width: 1440px;
@@ -325,6 +374,7 @@ footer {
 	display: flex;
 	justify-content: center;
 }
+
 #footer-container {
 	width: 1110px;
 	height: 83px;
@@ -334,8 +384,9 @@ footer {
 	grid-template-rows: 34px 35px;
 	grid-column-gap: 458px;
 	grid-row-gap: 14px;
-	grid-template-areas: "logo media""links copyRight";
+	grid-template-areas: "logo media" "links copyRight";
 }
+
 #footer-logo {
 	grid-area: logo;
 	background: url('../images/logo.svg') 0% 50% / 144px 24px no-repeat;
@@ -348,29 +399,6 @@ footer {
 	flex-direction: row;
 	align-items: flex-start;
 	justify-content: space-between;
-	color: white;
-}
-
-.textLink{
-	height: inherit;
-	position:relative;
-	font: 400 15px/25px 'Alata';
-	text-align: center;
-	cursor: pointer;
-}
-
-.textLink::after {
-	content: '';
-	width: 24px;
-	border-bottom: 2px solid transparent;
-	left: 50%;
-	bottom: 0;
-	transform: translateX(-50%);
-	transition: border-color 0.3s;
-}
-
-.textLink:hover::after {
-	border-bottom-color: white;
 }
 
 #footer-media {
@@ -384,15 +412,19 @@ footer {
 #facebook {
 	background: url("../images/icon-facebook.svg") center/24px no-repeat;
 }
+
 #twitter {
 	background: url("../images/icon-twitter.svg") center/24px no-repeat;
 }
+
 #pinterest {
 	background: url("../images/icon-pinterest.svg") center/24px no-repeat;
 }
+
 #instagram {
 	background: url("../images/icon-instagram.svg") center/24px no-repeat;
 }
+
 #footer-copyRight {
 	display: flex;
 	align-items: flex-start;
@@ -402,6 +434,7 @@ footer {
 	font: 400 15px/25px 'Alata';
 	text-align: right;
 }
+
 .media {
 	width: 24px;
 	height: inherit;
@@ -414,42 +447,49 @@ footer {
 
 
 @media screen and (max-width:480px) {
-	
+
 	body {
 		height: 100%;
 	}
 
-	h1{
+	h1 {
 		font: 300 50px/1 'Josefin Sans';
 	}
-	
+
 	/*######################## HEADER ########################*/
 	header {
 		width: 480px;
 		height: 830px;
 		background: url("../images/mobile/image-hero.jpg") center/480px no-repeat;
 	}
+
 	menu {
 		width: 430px;
 	}
+
 	#menu-links {
 		display: none;
 	}
-	#menu-hamburger{
+
+	#menu-hamburger {
 		display: block;
 	}
+
 	#header-text {
 		width: 430px;
 		height: 279px;
 		margin: 200px auto auto auto;
 	}
+
 	#header-text div {
 		width: 426px;
 		height: 275px;
 	}
+
 	#header-text h1 {
 		width: 330px;
 	}
+
 	/*######################## LEADER ########################*/
 	#leader {
 		width: 410px;
@@ -457,11 +497,13 @@ footer {
 		margin: 120px auto 50px auto;
 		flex-direction: column;
 	}
+
 	#leader-pic {
 		width: 410px;
 		height: 385px;
 		background: url("../images/mobile/image-interactive.jpg") center/410px no-repeat;
 	}
+
 	#leader-text {
 		position: relative;
 		z-index: 0;
@@ -470,17 +512,21 @@ footer {
 		left: auto;
 		margin-top: 0px;
 	}
+
 	#leader-text p {
 		margin-left: 0px;
 		text-align: center;
 		margin: 30px auto 0px auto;
 	}
+
 	.leader-title {
 		font: 300 35px/1 'Josefin Sans';
 	}
+
 	.leader-main-text {
 		font: 400 18px/1.6 'Alata';
 	}
+
 	/*######################## CREATIONS ########################*/
 	#creations {
 		grid-row-gap: 20px;
@@ -488,111 +534,137 @@ footer {
 		grid-template-rows: 125px 155px 155px 155px 155px 155px 155px 155px 155px 100px;
 		grid-template-columns: 420px;
 		grid-template-areas:
-			"title""earth""arcade""soccer""thegrid""above""pocket""curiosity""fisheye""button";
+			"title" "earth" "arcade" "soccer" "thegrid" "above" "pocket" "curiosity" "fisheye" "button";
 		margin-top: 80px;
 	}
+
 	#creations-title {
 		font: 300 50px/1 'Josefin Sans';
 	}
+
 	#creations-bt {
 		align-items: center;
 		justify-content: center;
 	}
+
 	#see-all-bt {
 		width: 200px;
 		height: 50px;
 		font: 400 18px/50px 'Alata';
 	}
+
 	#see-all-bt:hover {
 		cursor: pointer;
 		background-color: black;
 		color: white;
 	}
+
 	#creations-earth {
 		background: url("../images/mobile/image-deep-earth.jpg") center/420px no-repeat;
 	}
+
 	#creations-arcade {
 		background: url("../images/mobile/image-night-arcade.jpg") center/420px no-repeat;
 	}
+
 	#creations-soccer {
 		background: url("../images/mobile/image-soccer-team.jpg") center/420px no-repeat;
 	}
+
 	#creations-thegrid {
 		background: url("../images/mobile/image-grid.jpg") center/420px no-repeat;
 	}
+
 	#creations-above {
 		grid-area: above;
 		background: url("../images/mobile/image-from-above.jpg") center/420px no-repeat;
 	}
+
 	#creations-pocket {
 		background: url("../images/mobile/image-pocket-borealis.jpg") center/420px no-repeat;
 	}
+
 	#creations-curiosity {
 		background: url("../images/mobile/image-curiosity.jpg") center/420px no-repeat;
 	}
+
 	#creations-fisheye {
 		background: url("../images/mobile/image-fisheye.jpg") center/420px no-repeat;
 	}
+
 	.creation-cont {
 		width: 420px;
 		height: 155px;
 	}
+
 	.creation-text {
 		margin: auto auto 30px 30px;
 	}
-	
-/*######################## FOOTER ########################*/
-footer {
-	width: 480px;
-	height: 580px;
-	margin-top: 110px;
-}
-#footer-container {
-	width: 350px;
-	height: 465px;
-	grid-row-gap: 0px;
-	grid-template-columns: 350px;
-	grid-template-rows: 30px 340px 40px 50px;
-	grid-column-gap: 0px;
-	grid-template-areas: "logo""links""media""copyRight";
-}
-#footer-logo {
-	text-align: center;
-}
-#footer-links {
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-#footer-links div {
-	height: 36px;
-	margin: 0px auto 15px auto;
-}
-#footer-links p {
-	font: 400 17px/36px 'Alata';
-}
-#footer-links div:hover {
-	border-bottom: none;
-	opacity: 0.3;
-}
-#footer-media {
-	justify-content: center;
-}
-#facebook {
-	background: url("../images/icon-facebook.svg") top/24px no-repeat;
-}
-#twitter {
-	background: url("../images/icon-twitter.svg") top/24px no-repeat;
-}
-#pinterest {
-	background: url("../images/icon-pinterest.svg") top/24px no-repeat;
-}
-#instagram {
-	background: url("../images/icon-instagram.svg") top/24px no-repeat;
-}
-#footer-copyRight {
-	align-items: center;
-	justify-content: center;
-}
-	
+
+	/*######################## FOOTER ########################*/
+	footer {
+		width: 480px;
+		height: 580px;
+		margin-top: 110px;
+	}
+
+	#footer-container {
+		width: 350px;
+		height: 465px;
+		grid-row-gap: 0px;
+		grid-template-columns: 350px;
+		grid-template-rows: 30px 340px 40px 50px;
+		grid-column-gap: 0px;
+		grid-template-areas: "logo" "links" "media" "copyRight";
+	}
+
+	#footer-logo {
+		text-align: center;
+	}
+
+	#footer-links {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#footer-links div {
+		height: 36px;
+		margin: 0px auto 15px auto;
+	}
+
+	#footer-links p {
+		font: 400 17px/36px 'Alata';
+	}
+
+	#footer-links div:hover {
+		border-bottom: none;
+		opacity: 0.3;
+	}
+
+	#footer-media {
+		justify-content: center;
+	}
+
+	#facebook {
+		background: url("../images/icon-facebook.svg") top/24px no-repeat;
+	}
+
+	#twitter {
+		background: url("../images/icon-twitter.svg") top/24px no-repeat;
+	}
+
+	#pinterest {
+		background: url("../images/icon-pinterest.svg") top/24px no-repeat;
+	}
+
+	#instagram {
+		background: url("../images/icon-instagram.svg") top/24px no-repeat;
+	}
+
+	#footer-copyRight {
+		align-items: center;
+		justify-content: center;
+	}
+
 }
