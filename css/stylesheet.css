@@ -90,7 +90,7 @@ menu {
 
 #menu-links {
 	width: 380px;
-	height: inherit;
+	height: 30px;
 	justify-content: space-between;
 }
 
