@@ -64,7 +64,6 @@ p {
 /*######################## HEADER ########################*/
 header {
 	margin: 0px;
-	padding: 0px;
 	width: 1440px;
 	height: 650px;
 	padding: 64px 165px 0px;
@@ -445,13 +444,17 @@ footer {
 
 	/*######################## HEADER ########################*/
 	header {
-		width: 480px;
+		width: 100vw;
 		height: 830px;
-		background: url("../images/mobile/image-hero.jpg") center/480px no-repeat;
+		padding: 40px 0px 0px;
+		align-items: center;
+		background: url("../images/mobile/image-hero.jpg") center/cover no-repeat;
 	}
 
 	menu {
-		width: 430px;
+		width: 327px;
+		height: 24px;
+		
 	}
 
 	#menu-links {
@@ -460,6 +463,11 @@ footer {
 
 	#menu-hamburger {
 		display: block;
+	}
+
+	.menu-logo {
+		width: 144px;
+		background: url("../images/logo.svg") center/144px no-repeat;
 	}
 
 	#header-text {
@@ -476,6 +484,70 @@ footer {
 	#header-text h1 {
 		width: 330px;
 	}
+
+/* ######################## HEADER ########################
+header {
+	margin: 0px;
+	padding: 0px;
+	width: 1440px;
+	height: 650px;
+	padding: 64px 165px 0px;
+	display: flex;
+	flex-direction: column;
+	background: url("../images/desktop/image-hero.jpg") center/1440px no-repeat;
+}
+
+menu {
+	width: 1110px;
+	height: 32px;
+	justify-content: space-between;
+	padding: 0px;
+	margin: 0px;
+}
+
+.menu-logo {
+	width: 192px;
+	height: inherit;
+	background: url("../images/logo.svg") center/192px no-repeat;
+}
+
+#menu-links {
+	width: 380px;
+	height: inherit;
+	justify-content: space-between;
+	font: 400 15px/32px 'Alata';
+}
+
+#menu-hamburger {
+	display: none;
+	width: 24px;
+	height: 16px;
+	background: url("../images/icon-hamburger.svg") center/24px no-repeat;
+}
+
+#menu-hamburger:hover {
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+#header-text {
+	width: 650px;
+	height: 278px;
+	margin-top: 130px;
+	border: solid 2px white;
+	justify-content: center;
+}
+
+#header-text h1 {
+	width: 570px;
+	height: 198px;
+	text-align: left;
+	color: white;
+	margin: 0px;
+	padding: 0px;
+	font: 300 72px/70px 'Josefin Sans';
+}
+	 */
 
 	/*######################## LEADER ########################*/
 	#leader {
