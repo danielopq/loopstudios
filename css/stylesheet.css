@@ -338,29 +338,40 @@ footer {
 }
 #footer-logo {
 	grid-area: logo;
-	border: solid 1px red;
 }
+
 #footer-links {
-	border: solid 1px red;
+	height: 35px;
 	grid-area: links;
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
-}
-#footer-links div {
-	margin: auto 25px auto 0px;
-	text-align: center;
-	border: solid 1px blue;
-}
-#footer-links p {
-	height: 25px;
+	justify-content: space-between;
 	color: white;
-	font: 400 15px/25px 'Alata';
-	border: solid 1px red;
-	text-align: center;
-	margin: 0px;
-	padding: 0px;
 }
+
+.textLink{
+	height: inherit;
+	position:relative;
+	font: 400 15px/25px 'Alata';
+	text-align: center;
+	cursor: pointer;
+}
+
+.textLink::after {
+	content: '';
+	width: 24px;
+	border-bottom: 2px solid transparent;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+	transition: border-color 0.3s;
+}
+
+.textLink:hover::after {
+	border-bottom-color: white;
+  }
+
 #footer-media {
 	grid-area: media;
 	display: flex;
@@ -369,16 +380,16 @@ footer {
 	justify-content: flex-start;
 }
 #facebook {
-	background: url("../images/icon-facebook.svg") top/24px no-repeat;
+	background: url("../images/icon-facebook.svg") center/24px no-repeat;
 }
 #twitter {
-	background: url("../images/icon-twitter.svg") top/24px no-repeat;
+	background: url("../images/icon-twitter.svg") center/24px no-repeat;
 }
 #pinterest {
-	background: url("../images/icon-pinterest.svg") top/24px no-repeat;
+	background: url("../images/icon-pinterest.svg") center/24px no-repeat;
 }
 #instagram {
-	background: url("../images/icon-instagram.svg") top/24px no-repeat;
+	background: url("../images/icon-instagram.svg") center/24px no-repeat;
 }
 #footer-copyRight {
 	display: flex;
