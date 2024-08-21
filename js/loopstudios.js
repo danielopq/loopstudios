@@ -13,7 +13,7 @@
  * Displays the main menu (mobile version).
  */
 function showMobileMenu(){
-	document.getElementById("menu-mobile").style.display = "block";
+	document.getElementById("menu-mobile").style.display = "flex";
 	document.getElementsByTagName("html")[0].style.overflow = "hidden";
 }
 
