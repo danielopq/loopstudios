@@ -239,12 +239,12 @@ menu {
 	align-items: center;
 	justify-content: space-between;
 	margin-top: 184px;
+	font: 300 48px/48px 'Josefin Sans';
 }
 
 #creations-title p {
 	width: 445px;
 	height: inherit;
-	font: 300 48px/48px 'Josefin Sans';
 	color: black;
 }
 
@@ -255,7 +255,7 @@ menu {
 	justify-content: flex-end;
 }
 
-#see-all-bt {
+.see-all-bt {
 	width: 155px;
 	height: 40px;
 	font: 400 14px/40px 'Alata';
@@ -266,7 +266,7 @@ menu {
 	border: solid 1px black;
 }
 
-#see-all-bt:hover {
+.see-all-bt:hover {
 	cursor: pointer;
 	background-color: black;
 	color: white;
@@ -350,6 +350,10 @@ menu {
 	margin: auto auto 32px 40px;
 }
 
+#creationsMobile-bt {
+	display: none;
+}
+
 /*######################## FOOTER ########################*/
 footer {
 	width: 1440px;
@@ -413,7 +417,7 @@ footer {
 
 #footer-copyRight {
 	display: flex;
-	align-items: flex-start; 
+	align-items: flex-start;
 	justify-content: flex-end;
 	grid-area: copyRight;
 	color: hsl(0, 0%, 55%);
@@ -454,7 +458,7 @@ footer {
 	menu {
 		width: 327px;
 		height: 24px;
-		
+
 	}
 
 	#menu-links {
@@ -524,18 +528,27 @@ footer {
 	}
 
 	/*######################## CREATIONS ########################*/
+
+	#creations-title {
+		width: 327px;
+		height: 32px;
+		font: 300 32px/32px 'Josefin Sans';
+		margin: 92px 0px 48px;
+	}
+
+	#creations-title p {
+		width: inherit;
+		text-align: center;
+	}
+
 	#creations {
 		grid-row-gap: 20px;
 		grid-column-gap: 0px;
-		grid-template-rows: 125px 155px 155px 155px 155px 155px 155px 155px 155px 100px;
-		grid-template-columns: 420px;
+		grid-template-rows: 120px 120px 120px 120px 120px 120px 120px 120px;
+		grid-template-columns: 327px;
 		grid-template-areas:
-			"title" "earth" "arcade" "soccer" "thegrid" "above" "pocket" "curiosity" "fisheye" "button";
-		margin-top: 80px;
-	}
-
-	#creations-title {
-		font: 300 50px/1 'Josefin Sans';
+			"earth" "arcade" "soccer" "thegrid" "above" "pocket" "curiosity" "fisheye";
+		margin-top: 0px;
 	}
 
 	#creations-bt {
@@ -543,65 +556,71 @@ footer {
 		justify-content: center;
 	}
 
-	#see-all-bt {
-		width: 200px;
-		height: 50px;
-		font: 400 18px/50px 'Alata';
-	}
-
-	#see-all-bt:hover {
-		cursor: pointer;
-		background-color: black;
-		color: white;
-	}
-
 	#creations-earth {
-		background: url("../images/mobile/image-deep-earth.jpg") center/420px no-repeat;
+		background: url("../images/mobile/image-deep-earth.jpg") center/327px no-repeat;
 	}
 
 	#creations-arcade {
-		background: url("../images/mobile/image-night-arcade.jpg") center/420px no-repeat;
+		background: url("../images/mobile/image-night-arcade.jpg") center/327px no-repeat;
 	}
 
 	#creations-soccer {
-		background: url("../images/mobile/image-soccer-team.jpg") center/420px no-repeat;
+		background: url("../images/mobile/image-soccer-team.jpg") center/327px no-repeat;
 	}
 
 	#creations-thegrid {
-		background: url("../images/mobile/image-grid.jpg") center/420px no-repeat;
+		background: url("../images/mobile/image-grid.jpg") center/327px no-repeat;
 	}
 
 	#creations-above {
 		grid-area: above;
-		background: url("../images/mobile/image-from-above.jpg") center/420px no-repeat;
+		background: url("../images/mobile/image-from-above.jpg") center/327px no-repeat;
 	}
 
 	#creations-pocket {
-		background: url("../images/mobile/image-pocket-borealis.jpg") center/420px no-repeat;
+		background: url("../images/mobile/image-pocket-borealis.jpg") center/327px no-repeat;
 	}
 
 	#creations-curiosity {
-		background: url("../images/mobile/image-curiosity.jpg") center/420px no-repeat;
+		background: url("../images/mobile/image-curiosity.jpg") center/327px no-repeat;
 	}
 
 	#creations-fisheye {
-		background: url("../images/mobile/image-fisheye.jpg") center/420px no-repeat;
+		background: url("../images/mobile/image-fisheye.jpg") center/327px no-repeat;
 	}
 
 	.creation-cont {
-		width: 420px;
-		height: 155px;
+		width: 327px;
+		height: 120px;
 	}
 
 	.creation-text {
-		margin: auto auto 30px 30px;
+		margin: auto auto 20px 20px;
 	}
+
+	#creations-bt {
+		display: none;
+	}
+
+	#creationsMobile-bt {
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		margin-top: 34px;
+	}
+
+	.see-all-bt {
+		width: 157px;
+		height: 40px;
+		font: 400 14px/38px 'Alata';
+	}
+
 
 	/*######################## FOOTER ########################*/
 	footer {
-		width: 480px;
+		width: 100vw;
 		height: 580px;
-		margin-top: 110px;
+		margin-top: 96px;
 	}
 
 	#footer-container {
