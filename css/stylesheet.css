@@ -619,17 +619,17 @@ footer {
 	/*######################## FOOTER ########################*/
 	footer {
 		width: 100vw;
-		height: 470px;
+		height: 500px;
 		margin-top: 96px;
-		border: solid 1px red;
 	}
 
 	#footer-container {
-		width: 350px;
-		height: 465px;
+		width: inherit;
+		height: 380px;
+		justify-content: center;
 		grid-row-gap: 0px;
 		grid-template-columns: 358px;
-		grid-template-rows: 30px 221px 40px 50px;
+		grid-template-rows: 30px 221px 90px 30px;
 		grid-column-gap: 0px;
 		grid-template-areas: "logo" "links" "media" "copyRight";
 	}
@@ -658,23 +658,8 @@ footer {
 	}
 
 	#footer-media {
+		margin-top: 50px;
 		justify-content: center;
-	}
-
-	#facebook {
-		background: url("../images/icon-facebook.svg") top/24px no-repeat;
-	}
-
-	#twitter {
-		background: url("../images/icon-twitter.svg") top/24px no-repeat;
-	}
-
-	#pinterest {
-		background: url("../images/icon-pinterest.svg") top/24px no-repeat;
-	}
-
-	#instagram {
-		background: url("../images/icon-instagram.svg") top/24px no-repeat;
 	}
 
 	#footer-copyRight {
